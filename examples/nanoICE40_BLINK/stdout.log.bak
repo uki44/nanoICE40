@@ -1,0 +1,46 @@
+Running in Lattice mode
+
+
+Starting:    E:\LatticeSemiconductor\synpbase\bin64\mbin\synbatch.exe
+Install:     E:\LatticeSemiconductor\synpbase
+Hostname:    DESKTOP-BPD95DR
+Date:        Sun Oct 29 22:59:08 2023
+Version:     L-2016.09L+ice40
+
+Arguments:   -product synplify_pro -batch nanoICE40_BLINK_syn.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\nanoICE40_BLINK.srr"
+Running: nanoICE40_BLINK_Implmnt in foreground
+
+Running nanoICE40_BLINK_syn|nanoICE40_BLINK_Implmnt
+
+Running: compile (Compile) on nanoICE40_BLINK_syn|nanoICE40_BLINK_Implmnt
+# Sun Oct 29 22:59:08 2023
+
+Running: compile_flow (Compile Process) on nanoICE40_BLINK_syn|nanoICE40_BLINK_Implmnt
+# Sun Oct 29 22:59:08 2023
+
+Running: compiler (Compile Input) on nanoICE40_BLINK_syn|nanoICE40_BLINK_Implmnt
+# Sun Oct 29 22:59:08 2023
+compiler exited with errors
+Job failed on: nanoICE40_BLINK_syn|nanoICE40_BLINK_Implmnt
+
+Job: "compiler" terminated with error status: 2
+See log file: "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\synlog\nanoICE40_BLINK_compiler.srr"
+# Sun Oct 29 22:59:08 2023
+
+Return Code: 2
+Run Time:00h:00m:00s
+Complete: Compile Process on nanoICE40_BLINK_syn|nanoICE40_BLINK_Implmnt
+Complete: Compile on nanoICE40_BLINK_syn|nanoICE40_BLINK_Implmnt
+Complete: Logic Synthesis on nanoICE40_BLINK_syn|nanoICE40_BLINK_Implmnt
+
+exit status=2
+
+exit status=2
+

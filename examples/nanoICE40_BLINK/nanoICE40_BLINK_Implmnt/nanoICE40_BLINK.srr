@@ -1,0 +1,32 @@
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: E:\LatticeSemiconductor\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-BPD95DR
+
+# Sun Oct 29 22:59:08 2023
+
+#Implementation: nanoICE40_BLINK_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"E:\LatticeSemiconductor\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:Can't find top module!
+Top entity isn't set yet!
+@W: CD433 :"E:\LatticeSemiconductor\sbt_backend\Projects\icestickTest\main.vhd":0:0:0:0|No design units in file
+VHDL syntax check successful!
+@E: CD333 :"E:\LatticeSemiconductor\sbt_backend\Projects\icestickTest\main.vhd":1:0:1:100|No Entities found in input!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Oct 29 22:59:08 2023
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Oct 29 22:59:08 2023
+
+###########################################################]

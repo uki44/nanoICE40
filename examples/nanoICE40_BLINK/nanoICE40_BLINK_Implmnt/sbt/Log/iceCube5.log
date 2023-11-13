@@ -1,0 +1,2202 @@
+13:34:14
+E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f "nanoICE40_BLINK_lse.prj"
+starting Synthesisrunning SynthesisCopyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Nov 01 13:34:56 2023
+
+
+Command Line:  E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f nanoICE40_BLINK_lse.prj 
+
+INFO - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is SBTiCE40.
+The -t option is VQ100.
+The -d option is iCE40HX1K.
+                                                          
+
+##########################################################
+
+### Lattice Family : SBTiCE40
+
+### Device  : iCE40HX1K
+
+### Package : VQ100
+
+### Number of Logic Cells: 1280
+
+### Number of RAM4k Blocks: 16
+
+### Number of DSP Blocks: 0
+
+### Number of PLLs: 1
+
+### Number of IO Pins: 95
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+Top-level module name = main.
+Target frequency = 12.000000 MHz.
+Maximum fanout = 10000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK (searchpath added)
+VHDL library = work
+VHDL design file = main.vhd
+-sdc option: SDC file input not used.
+-vh2008
+
+Technology check ok...
+
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/sb_ice40.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK". VHDL-1504
+Analyzing VHDL file main.vhd. VHDL-1481
+INFO - synthesis: main.vhd(7): analyzing entity main. VHDL-1012
+INFO - synthesis: main.vhd(16): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+main.vhd(7): executing main(Behavioral)
+
+WARNING - synthesis: main.vhd(12): replacing existing netlist main(Behavioral). VHDL-1205
+Top module name (VHDL): main
+Last elaborated design is main(Behavioral)
+Loading NGL library 'E:/LatticeSemiconductor/LSE/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/LatticeSemiconductor/LSE/or5g00/data/orc5glib.ngl'...
+Top-level module name = main.
+
+
+
+Applying 12.000000 MHz constraint to all clocks
+
+Writing scf file : nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+
+Results of NGD DRC are available in main_drc.log.
+
+################### Begin Area Report (main)######################
+Number of register bits => 25 of 1280 (1 % )
+SB_CARRY => 23
+SB_DFF => 25
+SB_GB_IO => 1
+SB_IO => 8
+SB_LUT4 => 24
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_in_c, loads : 25
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LED_c, loads : 8
+  Net : n137, loads : 2
+  Net : n136, loads : 2
+  Net : n135, loads : 2
+  Net : n134, loads : 2
+  Net : n141, loads : 2
+  Net : n24, loads : 2
+  Net : n23, loads : 2
+  Net : n22, loads : 2
+  Net : n21, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 83.333333 -name    |             |             |
+clk0 [get_nets clk_in_c]                |   12.000 MHz|   25.598 MHz|    25  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 58.117  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.469  secs
+--------------------------------------------------------------
+Current Implementation nanoICE40_BLINK_Implmnt its sbt path: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 5 seconds
+E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f "nanoICE40_BLINK_lse.prj"
+starting Synthesisrunning SynthesisCopyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Nov 01 13:35:30 2023
+
+
+Command Line:  E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f nanoICE40_BLINK_lse.prj 
+
+INFO - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is SBTiCE40.
+The -t option is VQ100.
+The -d option is iCE40HX1K.
+                                                          
+
+##########################################################
+
+### Lattice Family : SBTiCE40
+
+### Device  : iCE40HX1K
+
+### Package : VQ100
+
+### Number of Logic Cells: 1280
+
+### Number of RAM4k Blocks: 16
+
+### Number of DSP Blocks: 0
+
+### Number of PLLs: 1
+
+### Number of IO Pins: 95
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+Top-level module name = main.
+Target frequency = 12.000000 MHz.
+Maximum fanout = 10000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK (searchpath added)
+VHDL library = work
+VHDL design file = main.vhd
+-sdc option: SDC file input not used.
+-vh2008
+
+Technology check ok...
+
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/sb_ice40.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK". VHDL-1504
+Analyzing VHDL file main.vhd. VHDL-1481
+INFO - synthesis: main.vhd(7): analyzing entity main. VHDL-1012
+INFO - synthesis: main.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+main.vhd(7): executing main(Behavioral)
+
+WARNING - synthesis: main.vhd(13): replacing existing netlist main(Behavioral). VHDL-1205
+Top module name (VHDL): main
+Last elaborated design is main(Behavioral)
+Loading NGL library 'E:/LatticeSemiconductor/LSE/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/LatticeSemiconductor/LSE/or5g00/data/orc5glib.ngl'...
+Top-level module name = main.
+######## Missing driver on net clk_out. Patching with GND.
+
+
+
+Applying 12.000000 MHz constraint to all clocks
+
+Writing scf file : nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+
+Results of NGD DRC are available in main_drc.log.
+
+################### Begin Area Report (main)######################
+Number of register bits => 25 of 1280 (1 % )
+SB_CARRY => 23
+SB_DFF => 25
+SB_GB_IO => 1
+SB_IO => 9
+SB_LUT4 => 24
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_in_c, loads : 25
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LED_c, loads : 8
+  Net : n137, loads : 2
+  Net : n136, loads : 2
+  Net : n135, loads : 2
+  Net : n134, loads : 2
+  Net : n141, loads : 2
+  Net : n24, loads : 2
+  Net : n23, loads : 2
+  Net : n22, loads : 2
+  Net : n21, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 83.333333 -name    |             |             |
+clk0 [get_nets clk_in_c]                |   12.000 MHz|   25.598 MHz|    25  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 57.840  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.391  secs
+--------------------------------------------------------------
+Current Implementation nanoICE40_BLINK_Implmnt its sbt path: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 0 seconds
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\edifparser.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf " "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist" "-pVQ100" "-yE:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf " -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:30:22
+
+Parsing edif file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf...
+Parsing constraint file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf ...
+start to read sdc/scf file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+sdc_reader OK E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+Stored edif netlist at E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main...
+Warning: The terminal connectivity LED_pad_6:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_in_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 000001
+Warning: The terminal connectivity LED_pad_2:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_0:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_7:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_5:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_3:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_1:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_4:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+
+write Timing Constraint to E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: main
+
+EDF Parser run-time: 4 (sec)
+edif parser succeed.
+Unrecognizable name main
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --package VQ100 --deviceMarketName iCE40HX1K --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc"
+starting placerrunning placerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --outdir E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --package VQ100 --deviceMarketName iCE40HX1K --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:55:52
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+Package              - VQ100
+Design database      - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main
+SDC file             - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer
+Timing library       - E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main/BFPGA_DESIGN_ep
+I2065: Reading device file : E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	24
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	1
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	0
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	1
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.0 (sec)
+
+Phase 3
+
+Design Statistics after Packing
+    Number of LUTs      	:	25
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	2
+        LUT, DFF and CARRY	:	23
+    Combinational LogicCells
+        Only LUT         	:	0
+        CARRY Only       	:	0
+        LUT with CARRY   	:	0
+    LogicCells                  :	25/1280
+    PLBs                        :	4/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+I2088: Phase 3, elapsed time : 0.3 (sec)
+
+Phase 4
+I2088: Phase 4, elapsed time : 0.1 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.0 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 0.1 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	25
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	25/1280
+    PLBs                        :	4/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 1
+Clock: main|clk_in | Frequency: 189.88 MHz | Target: 12.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 0.6 sec.
+
+placer succeed.
+starting IPExporterrunning IPExporterIPExporter succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --DRC_only  --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 17
+used logic cells: 25
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 17
+used logic cells: 25
+Translating sdc file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc...
+Translated sdc file is E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc
+Packer succeeded
+
+Packer run-time: 0 (sec)
+packer succeed.
+
+
+"E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --outdir "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router" --sdf_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --pin_permutation
+starting routerrunning routerSJRouter....
+Executing : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc --outdir E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router --sdf_file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --pin_permutation 
+Lattice Semiconductor Corporation  Router
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:44:15
+
+I1203: Reading Design main
+Read design time: 0
+I1202: Reading Architecture of device iCE40HX1K
+Read device time: 2
+I1209: Started routing
+I1223: Total Nets : 50 
+I1212: Iteration  1 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+Routing time: 0
+I1206: Completed routing
+I1204: Writing Design main
+Lib Closed
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 2 seconds
+router succeed.
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\netlister.exe" --verilog "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v" --vhdl "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd" --lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --view rt --device "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --splitio  --in-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc"
+starting netlistrunning netlistLattice Semiconductor Corporation  Verilog & VHDL Netlister
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:18:39
+
+Generating Verilog & VHDL netlist files ...
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd
+Netlister succeeded.
+
+Netlister run-time: 0 (sec)
+netlist succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc" --sdf-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --report-file "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --timing-summary
+starting timerrunning timerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtimer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc --sdf-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --report-file E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --timing-summary
+Lattice Semiconductor Corporation  Timer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:41:47
+
+Timer run-time: 1 seconds
+timer succeed.
+timer succeeded.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\bitmap.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --design "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --device_name iCE40HX1K --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on
+starting bitmaprunning bitmapLattice Semiconductor Corporation  Bit Stream Generator
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:17:40
+
+Bit Stream File Size: 257720 (251K 696 Bits)
+Bit Stream Generator succeeded
+
+Bitmap run-time: 0 (sec)
+bitmap succeed.
+Unrecognizable name main
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --DRC_only  --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 17
+used logic cells: 25
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\edifparser.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf " "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist" "-pVQ100" "-yE:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf " -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:30:22
+
+Parsing edif file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf...
+Parsing constraint file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf ...
+start to read sdc/scf file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+sdc_reader OK E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+Stored edif netlist at E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main...
+Warning: The terminal connectivity LED_pad_6:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_in_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 000001
+Warning: The terminal connectivity LED_pad_2:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_0:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_7:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_5:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_3:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_1:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_4:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+
+write Timing Constraint to E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: main
+
+EDF Parser run-time: 0 (sec)
+edif parser succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --package VQ100 --deviceMarketName iCE40HX1K --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc"
+starting placerrunning placerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --outdir E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --package VQ100 --deviceMarketName iCE40HX1K --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:55:52
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+Package              - VQ100
+Design database      - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main
+SDC file             - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer
+Timing library       - E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main/BFPGA_DESIGN_ep
+I2065: Reading device file : E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	24
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	1
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	0
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	1
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.0 (sec)
+
+Phase 3
+
+Design Statistics after Packing
+    Number of LUTs      	:	25
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	2
+        LUT, DFF and CARRY	:	23
+    Combinational LogicCells
+        Only LUT         	:	0
+        CARRY Only       	:	0
+        LUT with CARRY   	:	0
+    LogicCells                  :	25/1280
+    PLBs                        :	4/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+I2088: Phase 3, elapsed time : 0.2 (sec)
+
+Phase 4
+I2088: Phase 4, elapsed time : 0.1 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.0 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 0.1 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	25
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	25/1280
+    PLBs                        :	4/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 1
+Clock: main|clk_in | Frequency: 189.88 MHz | Target: 12.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 0.5 sec.
+
+placer succeed.
+starting IPExporterrunning IPExporterIPExporter succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --DRC_only  --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 17
+used logic cells: 25
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 17
+used logic cells: 25
+Translating sdc file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc...
+Translated sdc file is E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc
+Packer succeeded
+
+Packer run-time: 0 (sec)
+packer succeed.
+
+
+"E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --outdir "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router" --sdf_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --pin_permutation
+starting routerrunning routerSJRouter....
+Executing : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc --outdir E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router --sdf_file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --pin_permutation 
+Lattice Semiconductor Corporation  Router
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:44:15
+
+I1203: Reading Design main
+Read design time: 0
+I1202: Reading Architecture of device iCE40HX1K
+Read device time: 2
+I1209: Started routing
+I1223: Total Nets : 50 
+I1212: Iteration  1 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+Routing time: 0
+I1206: Completed routing
+I1204: Writing Design main
+Lib Closed
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 2 seconds
+router succeed.
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\netlister.exe" --verilog "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v" --vhdl "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd" --lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --view rt --device "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --splitio  --in-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc"
+starting netlistrunning netlistLattice Semiconductor Corporation  Verilog & VHDL Netlister
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:18:39
+
+Generating Verilog & VHDL netlist files ...
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd
+Netlister succeeded.
+
+Netlister run-time: 0 (sec)
+netlist succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc" --sdf-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --report-file "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --timing-summary
+starting timerrunning timerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtimer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc --sdf-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --report-file E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --timing-summary
+Lattice Semiconductor Corporation  Timer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:41:47
+
+Timer run-time: 0 seconds
+timer succeed.
+timer succeeded.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\bitmap.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --design "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --device_name iCE40HX1K --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on
+starting bitmaprunning bitmapLattice Semiconductor Corporation  Bit Stream Generator
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:17:40
+
+Bit Stream File Size: 257720 (251K 696 Bits)
+Bit Stream Generator succeeded
+
+Bitmap run-time: 1 (sec)
+bitmap succeed.
+E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f "nanoICE40_BLINK_lse.prj"
+starting Synthesisrunning SynthesisCopyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Nov 01 13:39:21 2023
+
+
+Command Line:  E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f nanoICE40_BLINK_lse.prj 
+
+INFO - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is SBTiCE40.
+The -t option is VQ100.
+The -d option is iCE40HX1K.
+                                                          
+
+##########################################################
+
+### Lattice Family : SBTiCE40
+
+### Device  : iCE40HX1K
+
+### Package : VQ100
+
+### Number of Logic Cells: 1280
+
+### Number of RAM4k Blocks: 16
+
+### Number of DSP Blocks: 0
+
+### Number of PLLs: 1
+
+### Number of IO Pins: 95
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+Top-level module name = main.
+Target frequency = 12.000000 MHz.
+Maximum fanout = 10000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK (searchpath added)
+VHDL library = work
+VHDL design file = main.vhd
+-sdc option: SDC file input not used.
+-vh2008
+
+Technology check ok...
+
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/sb_ice40.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK". VHDL-1504
+Analyzing VHDL file main.vhd. VHDL-1481
+INFO - synthesis: main.vhd(7): analyzing entity main. VHDL-1012
+INFO - synthesis: main.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+main.vhd(7): executing main(Behavioral)
+
+WARNING - synthesis: main.vhd(13): replacing existing netlist main(Behavioral). VHDL-1205
+Top module name (VHDL): main
+Last elaborated design is main(Behavioral)
+Loading NGL library 'E:/LatticeSemiconductor/LSE/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/LatticeSemiconductor/LSE/or5g00/data/orc5glib.ngl'...
+Top-level module name = main.
+
+
+
+Applying 12.000000 MHz constraint to all clocks
+
+Writing scf file : nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+
+Results of NGD DRC are available in main_drc.log.
+
+################### Begin Area Report (main)######################
+Number of register bits => 25 of 1280 (1 % )
+SB_CARRY => 23
+SB_DFF => 25
+SB_GB_IO => 1
+SB_IO => 9
+SB_LUT4 => 24
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_out_c_c, loads : 26
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LED_c, loads : 8
+  Net : n137, loads : 2
+  Net : n136, loads : 2
+  Net : n135, loads : 2
+  Net : n134, loads : 2
+  Net : n141, loads : 2
+  Net : n24, loads : 2
+  Net : n23, loads : 2
+  Net : n22, loads : 2
+  Net : n21, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 83.333333 -name    |             |             |
+clk0 [get_nets clk_out_c_c]             |   12.000 MHz|   25.598 MHz|    25  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 57.820  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.391  secs
+--------------------------------------------------------------
+Current Implementation nanoICE40_BLINK_Implmnt its sbt path: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 0 seconds
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\edifparser.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf " "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist" "-pVQ100" "-yE:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf " -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:30:22
+
+Parsing edif file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf...
+Parsing constraint file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf ...
+start to read sdc/scf file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+sdc_reader OK E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+Stored edif netlist at E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main...
+Warning: The terminal connectivity LED_pad_6:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_2:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_0:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_7:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_5:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_3:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_c_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 000001
+Warning: The terminal connectivity LED_pad_1:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_4:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+
+write Timing Constraint to E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: main
+
+EDF Parser run-time: 1 (sec)
+edif parser succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\edifparser.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf " "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist" "-pVQ100" "-yE:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf " -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:30:22
+
+Parsing edif file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf...
+Parsing constraint file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf ...
+start to read sdc/scf file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+sdc_reader OK E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+Stored edif netlist at E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main...
+Warning: The terminal connectivity LED_pad_6:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_2:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_0:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_7:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_5:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_3:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_c_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 000001
+Warning: The terminal connectivity LED_pad_1:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_4:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+
+write Timing Constraint to E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: main
+
+EDF Parser run-time: 0 (sec)
+edif parser succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --package VQ100 --deviceMarketName iCE40HX1K --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc"
+starting placerrunning placerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --outdir E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --package VQ100 --deviceMarketName iCE40HX1K --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:55:52
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+Package              - VQ100
+Design database      - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main
+SDC file             - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer
+Timing library       - E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main/BFPGA_DESIGN_ep
+I2065: Reading device file : E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	24
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	1
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	1
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	2
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.0 (sec)
+
+Phase 3
+
+Design Statistics after Packing
+    Number of LUTs      	:	26
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	2
+        LUT, DFF and CARRY	:	23
+    Combinational LogicCells
+        Only LUT         	:	1
+        CARRY Only       	:	0
+        LUT with CARRY   	:	0
+    LogicCells                  :	26/1280
+    PLBs                        :	4/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+I2088: Phase 3, elapsed time : 0.2 (sec)
+
+Phase 4
+Warning-1034: Found non-unate timing arc, from pin "in3" to pin "lcout" of instance "GB_BUFFER_clk_out_c_c_THRU_LUT4_0_LC_25", in the clock network. Converting the timing arc to positive-unate
+I2088: Phase 4, elapsed time : 0.1 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.0 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 0.1 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	26
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	26/1280
+    PLBs                        :	5/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 1
+Clock: main|clk_in | Frequency: 189.88 MHz | Target: 12.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 0.5 sec.
+
+placer succeed.
+starting IPExporterrunning IPExporterIPExporter succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --DRC_only  --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 18
+used logic cells: 26
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 18
+used logic cells: 26
+Translating sdc file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc...
+Translated sdc file is E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc
+Packer succeeded
+
+Packer run-time: 0 (sec)
+packer succeed.
+
+
+"E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --outdir "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router" --sdf_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --pin_permutation
+starting routerrunning routerSJRouter....
+Executing : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc --outdir E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router --sdf_file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --pin_permutation 
+Lattice Semiconductor Corporation  Router
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:44:15
+
+I1203: Reading Design main
+Read design time: 0
+I1202: Reading Architecture of device iCE40HX1K
+Read device time: 1
+I1209: Started routing
+I1223: Total Nets : 51 
+I1212: Iteration  1 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+Routing time: 0
+I1206: Completed routing
+I1204: Writing Design main
+Lib Closed
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 1 seconds
+router succeed.
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\netlister.exe" --verilog "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v" --vhdl "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd" --lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --view rt --device "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --splitio  --in-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc"
+starting netlistrunning netlistLattice Semiconductor Corporation  Verilog & VHDL Netlister
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:18:39
+
+Generating Verilog & VHDL netlist files ...
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd
+Netlister succeeded.
+
+Netlister run-time: 1 (sec)
+netlist succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc" --sdf-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --report-file "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --timing-summary
+starting timerrunning timerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtimer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc --sdf-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --report-file E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --timing-summary
+Lattice Semiconductor Corporation  Timer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:41:47
+
+Warning-1034: Found non-unate timing arc, from pin "DOUT0" to pin "PADOUT" of instance "clk_out_pad_preio", in the clock network. Converting the timing arc to positive-unate
+Timer run-time: 0 seconds
+timer succeed.
+timer succeeded.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\bitmap.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --design "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --device_name iCE40HX1K --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on
+starting bitmaprunning bitmapLattice Semiconductor Corporation  Bit Stream Generator
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:17:40
+
+Bit Stream File Size: 257720 (251K 696 Bits)
+Bit Stream Generator succeeded
+
+Bitmap run-time: 1 (sec)
+bitmap succeed.
+E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f "nanoICE40_BLINK_lse.prj"
+starting Synthesisrunning SynthesisCopyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Nov 01 13:43:03 2023
+
+
+Command Line:  E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f nanoICE40_BLINK_lse.prj 
+
+INFO - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is SBTiCE40.
+The -t option is VQ100.
+The -d option is iCE40HX1K.
+                                                          
+
+##########################################################
+
+### Lattice Family : SBTiCE40
+
+### Device  : iCE40HX1K
+
+### Package : VQ100
+
+### Number of Logic Cells: 1280
+
+### Number of RAM4k Blocks: 16
+
+### Number of DSP Blocks: 0
+
+### Number of PLLs: 1
+
+### Number of IO Pins: 95
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+Top-level module name = main.
+Target frequency = 12.000000 MHz.
+Maximum fanout = 10000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK (searchpath added)
+VHDL library = work
+VHDL design file = main.vhd
+-sdc option: SDC file input not used.
+-vh2008
+
+Technology check ok...
+
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/sb_ice40.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK". VHDL-1504
+Analyzing VHDL file main.vhd. VHDL-1481
+INFO - synthesis: main.vhd(7): analyzing entity main. VHDL-1012
+INFO - synthesis: main.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+main.vhd(7): executing main(Behavioral)
+
+WARNING - synthesis: main.vhd(13): replacing existing netlist main(Behavioral). VHDL-1205
+Top module name (VHDL): main
+Last elaborated design is main(Behavioral)
+Loading NGL library 'E:/LatticeSemiconductor/LSE/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/LatticeSemiconductor/LSE/or5g00/data/orc5glib.ngl'...
+Top-level module name = main.
+
+
+
+Applying 12.000000 MHz constraint to all clocks
+
+Writing scf file : nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+
+Results of NGD DRC are available in main_drc.log.
+
+################### Begin Area Report (main)######################
+Number of register bits => 25 of 1280 (1 % )
+SB_CARRY => 23
+SB_DFF => 25
+SB_GB_IO => 1
+SB_IO => 9
+SB_LUT4 => 24
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_out_c_c, loads : 26
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LED_c, loads : 8
+  Net : n137, loads : 2
+  Net : n136, loads : 2
+  Net : n135, loads : 2
+  Net : n134, loads : 2
+  Net : n141, loads : 2
+  Net : n24, loads : 2
+  Net : n23, loads : 2
+  Net : n22, loads : 2
+  Net : n21, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 83.333333 -name    |             |             |
+clk0 [get_nets clk_out_c_c]             |   12.000 MHz|   25.598 MHz|    25  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 57.633  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.359  secs
+--------------------------------------------------------------
+Current Implementation nanoICE40_BLINK_Implmnt its sbt path: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 0 seconds
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\edifparser.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf " "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist" "-pVQ100" "-yE:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf " -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:30:22
+
+Parsing edif file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf...
+Parsing constraint file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf ...
+start to read sdc/scf file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+sdc_reader OK E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+Stored edif netlist at E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main...
+Warning: The terminal connectivity LED_pad_6:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_2:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_0:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_7:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_5:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_3:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_c_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 000001
+Warning: The terminal connectivity LED_pad_1:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_4:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+
+write Timing Constraint to E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: main
+
+EDF Parser run-time: 0 (sec)
+edif parser succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --package VQ100 --deviceMarketName iCE40HX1K --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc"
+starting placerrunning placerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --outdir E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --package VQ100 --deviceMarketName iCE40HX1K --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:55:52
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+Package              - VQ100
+Design database      - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main
+SDC file             - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer
+Timing library       - E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main/BFPGA_DESIGN_ep
+I2065: Reading device file : E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	24
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	1
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	1
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	2
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.0 (sec)
+
+Phase 3
+
+Design Statistics after Packing
+    Number of LUTs      	:	26
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	2
+        LUT, DFF and CARRY	:	23
+    Combinational LogicCells
+        Only LUT         	:	1
+        CARRY Only       	:	0
+        LUT with CARRY   	:	0
+    LogicCells                  :	26/1280
+    PLBs                        :	4/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+I2088: Phase 3, elapsed time : 0.2 (sec)
+
+Phase 4
+Warning-1034: Found non-unate timing arc, from pin "in3" to pin "lcout" of instance "GB_BUFFER_clk_out_c_c_THRU_LUT4_0_LC_25", in the clock network. Converting the timing arc to positive-unate
+I2088: Phase 4, elapsed time : 0.1 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.0 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 0.1 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	26
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	26/1280
+    PLBs                        :	5/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 1
+Clock: main|clk_in | Frequency: 189.88 MHz | Target: 12.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 0.5 sec.
+
+placer succeed.
+starting IPExporterrunning IPExporterIPExporter succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --DRC_only  --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 18
+used logic cells: 26
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 18
+used logic cells: 26
+Translating sdc file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc...
+Translated sdc file is E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc
+Packer succeeded
+
+Packer run-time: 1 (sec)
+packer succeed.
+
+
+"E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --outdir "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router" --sdf_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --pin_permutation
+starting routerrunning routerSJRouter....
+Executing : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc --outdir E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router --sdf_file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --pin_permutation 
+Lattice Semiconductor Corporation  Router
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:44:15
+
+I1203: Reading Design main
+Read design time: 0
+I1202: Reading Architecture of device iCE40HX1K
+Read device time: 1
+I1209: Started routing
+I1223: Total Nets : 51 
+I1212: Iteration  1 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+Routing time: 0
+I1206: Completed routing
+I1204: Writing Design main
+Lib Closed
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 1 seconds
+router succeed.
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\netlister.exe" --verilog "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v" --vhdl "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd" --lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --view rt --device "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --splitio  --in-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc"
+starting netlistrunning netlistLattice Semiconductor Corporation  Verilog & VHDL Netlister
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:18:39
+
+Generating Verilog & VHDL netlist files ...
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd
+Netlister succeeded.
+
+Netlister run-time: 0 (sec)
+netlist succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc" --sdf-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --report-file "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --timing-summary
+starting timerrunning timerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtimer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc --sdf-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --report-file E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --timing-summary
+Lattice Semiconductor Corporation  Timer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:41:47
+
+Warning-1034: Found non-unate timing arc, from pin "DOUT0" to pin "PADOUT" of instance "clk_out_pad_preio", in the clock network. Converting the timing arc to positive-unate
+Timer run-time: 1 seconds
+timer succeed.
+timer succeeded.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\bitmap.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --design "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --device_name iCE40HX1K --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on
+starting bitmaprunning bitmapLattice Semiconductor Corporation  Bit Stream Generator
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:17:40
+
+Bit Stream File Size: 257720 (251K 696 Bits)
+Bit Stream Generator succeeded
+
+Bitmap run-time: 0 (sec)
+bitmap succeed.
+Unrecognizable name main
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --DRC_only  --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 34
+used logic cells: 26
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f "nanoICE40_BLINK_lse.prj"
+starting Synthesisrunning SynthesisCopyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Nov 01 13:47:52 2023
+
+
+Command Line:  E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f nanoICE40_BLINK_lse.prj 
+
+INFO - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is SBTiCE40.
+The -t option is VQ100.
+The -d option is iCE40HX1K.
+                                                          
+
+##########################################################
+
+### Lattice Family : SBTiCE40
+
+### Device  : iCE40HX1K
+
+### Package : VQ100
+
+### Number of Logic Cells: 1280
+
+### Number of RAM4k Blocks: 16
+
+### Number of DSP Blocks: 0
+
+### Number of PLLs: 1
+
+### Number of IO Pins: 95
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+Top-level module name = main.
+Target frequency = 12.000000 MHz.
+Maximum fanout = 10000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK (searchpath added)
+VHDL library = work
+VHDL design file = main.vhd
+-sdc option: SDC file input not used.
+-vh2008
+
+Technology check ok...
+
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/sb_ice40.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK". VHDL-1504
+Analyzing VHDL file main.vhd. VHDL-1481
+INFO - synthesis: main.vhd(7): analyzing entity main. VHDL-1012
+INFO - synthesis: main.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+main.vhd(7): executing main(Behavioral)
+
+WARNING - synthesis: main.vhd(13): replacing existing netlist main(Behavioral). VHDL-1205
+Top module name (VHDL): main
+Last elaborated design is main(Behavioral)
+Loading NGL library 'E:/LatticeSemiconductor/LSE/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/LatticeSemiconductor/LSE/or5g00/data/orc5glib.ngl'...
+Top-level module name = main.
+
+
+
+Applying 12.000000 MHz constraint to all clocks
+
+Writing scf file : nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+
+Results of NGD DRC are available in main_drc.log.
+
+################### Begin Area Report (main)######################
+Number of register bits => 25 of 1280 (1 % )
+SB_CARRY => 23
+SB_DFF => 25
+SB_GB_IO => 1
+SB_IO => 9
+SB_LUT4 => 24
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_out_c_c, loads : 26
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LED_c, loads : 8
+  Net : n137, loads : 2
+  Net : n136, loads : 2
+  Net : n135, loads : 2
+  Net : n134, loads : 2
+  Net : n141, loads : 2
+  Net : n24, loads : 2
+  Net : n23, loads : 2
+  Net : n22, loads : 2
+  Net : n21, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 83.333333 -name    |             |             |
+clk0 [get_nets clk_out_c_c]             |   12.000 MHz|   25.598 MHz|    25  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 57.680  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.391  secs
+--------------------------------------------------------------
+Current Implementation nanoICE40_BLINK_Implmnt its sbt path: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 0 seconds
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\edifparser.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf " "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist" "-pVQ100" "-yE:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf " -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:30:22
+
+Parsing edif file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf...
+Parsing constraint file: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/constraint/main_pcf_sbt.pcf ...
+start to read sdc/scf file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+sdc_reader OK E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+Stored edif netlist at E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main...
+Warning: The terminal connectivity LED_pad_6:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_2:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_0:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_7:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_5:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_3:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity clk_out_c_pad:OUTPUTENABLE is removed because the PIN_TYPE is configured as 000001
+Warning: The terminal connectivity LED_pad_1:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+Warning: The terminal connectivity LED_pad_4:OUTPUTENABLE is removed because the PIN_TYPE is configured as 011001
+
+write Timing Constraint to E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: main
+
+EDF Parser run-time: 0 (sec)
+edif parser succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --package VQ100 --deviceMarketName iCE40HX1K --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc"
+starting placerrunning placerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --outdir E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --package VQ100 --deviceMarketName iCE40HX1K --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:55:52
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+Package              - VQ100
+Design database      - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main
+SDC file             - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer
+Timing library       - E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main/BFPGA_DESIGN_ep
+I2065: Reading device file : E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	24
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	1
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	1
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	2
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.0 (sec)
+
+Phase 3
+
+Design Statistics after Packing
+    Number of LUTs      	:	26
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	2
+        LUT, DFF and CARRY	:	23
+    Combinational LogicCells
+        Only LUT         	:	1
+        CARRY Only       	:	0
+        LUT with CARRY   	:	0
+    LogicCells                  :	26/1280
+    PLBs                        :	4/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+I2088: Phase 3, elapsed time : 0.2 (sec)
+
+Phase 4
+Warning-1034: Found non-unate timing arc, from pin "in3" to pin "lcout" of instance "GB_BUFFER_clk_out_c_c_THRU_LUT4_0_LC_25", in the clock network. Converting the timing arc to positive-unate
+I2088: Phase 4, elapsed time : 0.1 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.0 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 0.1 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	26
+    Number of DFFs      	:	25
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	23
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	9
+    Number of GBIOs     	:	1
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	26/1280
+    PLBs                        :	5/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	10/72
+    PLLs                        :	0/0
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 1
+Clock: main|clk_in | Frequency: 189.88 MHz | Target: 12.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 0.5 sec.
+
+placer succeed.
+starting IPExporterrunning IPExporterIPExporter succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --DRC_only  --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 18
+used logic cells: 26
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\packer.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer" --translator "E:\LatticeSemiconductor\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc" --dst_sdc_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 18
+used logic cells: 26
+Translating sdc file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\placer\main_pl.sdc...
+Translated sdc file is E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc
+Packer succeeded
+
+Packer run-time: 0 (sec)
+packer succeed.
+
+
+"E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --outdir "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router" --sdf_file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --pin_permutation
+starting routerrunning routerSJRouter....
+Executing : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbrouter.exe E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc --outdir E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\router --sdf_file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --pin_permutation 
+Lattice Semiconductor Corporation  Router
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:44:15
+
+I1203: Reading Design main
+Read design time: 0
+I1202: Reading Architecture of device iCE40HX1K
+Read device time: 2
+I1209: Started routing
+I1223: Total Nets : 51 
+I1212: Iteration  1 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+Routing time: 0
+I1206: Completed routing
+I1204: Writing Design main
+Lib Closed
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 2 seconds
+router succeed.
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\netlister.exe" --verilog "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v" --vhdl "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd" --lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --view rt --device "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --splitio  --in-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\packer\main_pk.sdc" --out-sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc"
+starting netlistrunning netlistLattice Semiconductor Corporation  Verilog & VHDL Netlister
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:18:39
+
+Generating Verilog & VHDL netlist files ...
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.v
+Writing E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt/sbt/outputs/simulation_netlist\main_sbt.vhd
+Netlister succeeded.
+
+Netlister run-time: 1 (sec)
+netlist succeed.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --lib-file "E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib" --sdc-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc" --sdf-file "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf" --report-file "E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt" --device-file "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --timing-summary
+starting timerrunning timerExecuting : E:\LatticeSemiconductor\sbt_backend\bin\win32\opt\sbtimer.exe --des-lib E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main --lib-file E:\LatticeSemiconductor\sbt_backend\devices\ice40HX1K.lib --sdc-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\netlister\main_sbt.sdc --sdf-file E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\simulation_netlist\main_sbt.sdf --report-file E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\sbt\outputs\timer\main_timing.rpt --device-file E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev --timing-summary
+Lattice Semiconductor Corporation  Timer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:41:47
+
+Warning-1034: Found non-unate timing arc, from pin "DOUT0" to pin "PADOUT" of instance "clk_out_pad_preio", in the clock network. Converting the timing arc to positive-unate
+Timer run-time: 0 seconds
+timer succeed.
+timer succeeded.
+
+
+"E:/LatticeSemiconductor/sbt_backend/bin/win32/opt\bitmap.exe" "E:\LatticeSemiconductor\sbt_backend\devices\ICE40P01.dev" --design "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\netlist\oadb-main" --device_name iCE40HX1K --package VQ100 --outdir "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK/nanoICE40_BLINK_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on
+starting bitmaprunning bitmapLattice Semiconductor Corporation  Bit Stream Generator
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:17:40
+
+Bit Stream File Size: 257720 (251K 696 Bits)
+Bit Stream Generator succeeded
+
+Bitmap run-time: 1 (sec)
+bitmap succeed.
+13:49:44

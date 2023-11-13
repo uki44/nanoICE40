@@ -1,0 +1,46 @@
+ble_pack GB_BUFFER_clk_out_c_c_THRU_LUT4_0_LC_1_16_2 { GB_BUFFER_clk_out_c_c_THRU_LUT4_0 }
+clb_pack LT_1_16 { GB_BUFFER_clk_out_c_c_THRU_LUT4_0_LC_1_16_2 }
+set_location LT_1_16 1 16
+ble_pack LED_i1_LC_4_3_0 { LED_i1_THRU_LUT4_0, LED_i1 }
+clb_pack LT_4_3 { LED_i1_LC_4_3_0 }
+set_location LT_4_3 4 3
+ble_pack cnt_15__i0_LC_5_1_0 { cnt_15_add_4_2_lut, cnt_15__i0, cnt_15_add_4_2 }
+ble_pack cnt_15__i1_LC_5_1_1 { cnt_15_add_4_3_lut, cnt_15__i1, cnt_15_add_4_3 }
+ble_pack cnt_15__i2_LC_5_1_2 { cnt_15_add_4_4_lut, cnt_15__i2, cnt_15_add_4_4 }
+ble_pack cnt_15__i3_LC_5_1_3 { cnt_15_add_4_5_lut, cnt_15__i3, cnt_15_add_4_5 }
+ble_pack cnt_15__i4_LC_5_1_4 { cnt_15_add_4_6_lut, cnt_15__i4, cnt_15_add_4_6 }
+ble_pack cnt_15__i5_LC_5_1_5 { cnt_15_add_4_7_lut, cnt_15__i5, cnt_15_add_4_7 }
+ble_pack cnt_15__i6_LC_5_1_6 { cnt_15_add_4_8_lut, cnt_15__i6, cnt_15_add_4_8 }
+ble_pack cnt_15__i7_LC_5_1_7 { cnt_15_add_4_9_lut, cnt_15__i7, cnt_15_add_4_9 }
+clb_pack LT_5_1 { cnt_15__i0_LC_5_1_0, cnt_15__i1_LC_5_1_1, cnt_15__i2_LC_5_1_2, cnt_15__i3_LC_5_1_3, cnt_15__i4_LC_5_1_4, cnt_15__i5_LC_5_1_5, cnt_15__i6_LC_5_1_6, cnt_15__i7_LC_5_1_7 }
+set_location LT_5_1 5 1
+ble_pack cnt_15__i8_LC_5_2_0 { cnt_15_add_4_10_lut, cnt_15__i8, cnt_15_add_4_10 }
+ble_pack cnt_15__i9_LC_5_2_1 { cnt_15_add_4_11_lut, cnt_15__i9, cnt_15_add_4_11 }
+ble_pack cnt_15__i10_LC_5_2_2 { cnt_15_add_4_12_lut, cnt_15__i10, cnt_15_add_4_12 }
+ble_pack cnt_15__i11_LC_5_2_3 { cnt_15_add_4_13_lut, cnt_15__i11, cnt_15_add_4_13 }
+ble_pack cnt_15__i12_LC_5_2_4 { cnt_15_add_4_14_lut, cnt_15__i12, cnt_15_add_4_14 }
+ble_pack cnt_15__i13_LC_5_2_5 { cnt_15_add_4_15_lut, cnt_15__i13, cnt_15_add_4_15 }
+ble_pack cnt_15__i14_LC_5_2_6 { cnt_15_add_4_16_lut, cnt_15__i14, cnt_15_add_4_16 }
+ble_pack cnt_15__i15_LC_5_2_7 { cnt_15_add_4_17_lut, cnt_15__i15, cnt_15_add_4_17 }
+clb_pack LT_5_2 { cnt_15__i8_LC_5_2_0, cnt_15__i9_LC_5_2_1, cnt_15__i10_LC_5_2_2, cnt_15__i11_LC_5_2_3, cnt_15__i12_LC_5_2_4, cnt_15__i13_LC_5_2_5, cnt_15__i14_LC_5_2_6, cnt_15__i15_LC_5_2_7 }
+set_location LT_5_2 5 2
+ble_pack cnt_15__i16_LC_5_3_0 { cnt_15_add_4_18_lut, cnt_15__i16, cnt_15_add_4_18 }
+ble_pack cnt_15__i17_LC_5_3_1 { cnt_15_add_4_19_lut, cnt_15__i17, cnt_15_add_4_19 }
+ble_pack cnt_15__i18_LC_5_3_2 { cnt_15_add_4_20_lut, cnt_15__i18, cnt_15_add_4_20 }
+ble_pack cnt_15__i19_LC_5_3_3 { cnt_15_add_4_21_lut, cnt_15__i19, cnt_15_add_4_21 }
+ble_pack cnt_15__i20_LC_5_3_4 { cnt_15_add_4_22_lut, cnt_15__i20, cnt_15_add_4_22 }
+ble_pack cnt_15__i21_LC_5_3_5 { cnt_15_add_4_23_lut, cnt_15__i21, cnt_15_add_4_23 }
+ble_pack cnt_15__i22_LC_5_3_6 { cnt_15_add_4_24_lut, cnt_15__i22, cnt_15_add_4_24 }
+ble_pack cnt_15__i23_LC_5_3_7 { cnt_15_add_4_25_lut, cnt_15__i23 }
+clb_pack LT_5_3 { cnt_15__i16_LC_5_3_0, cnt_15__i17_LC_5_3_1, cnt_15__i18_LC_5_3_2, cnt_15__i19_LC_5_3_3, cnt_15__i20_LC_5_3_4, cnt_15__i21_LC_5_3_5, cnt_15__i22_LC_5_3_6, cnt_15__i23_LC_5_3_7 }
+set_location LT_5_3 5 3
+set_io LED[6] 51
+set_io LED[2] 30
+set_io clk_out 100
+set_io LED[7] 52
+set_io LED[5] 40
+set_io LED[3] 36
+set_io LED[1] 29
+set_io clk_in 34
+set_io LED[4] 37
+set_io LED[0] 28

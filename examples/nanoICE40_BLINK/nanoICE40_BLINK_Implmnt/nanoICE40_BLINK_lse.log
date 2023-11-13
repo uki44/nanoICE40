@@ -1,0 +1,151 @@
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Nov 01 13:47:52 2023
+
+
+Command Line:  E:\LatticeSemiconductor\LSE\bin\nt\synthesis.exe -f nanoICE40_BLINK_lse.prj 
+
+Synthesis options:
+The -a option is SBTiCE40.
+The -t option is VQ100.
+The -d option is iCE40HX1K.
+                                                          
+
+##########################################################
+
+### Lattice Family : SBTiCE40
+
+### Device  : iCE40HX1K
+
+### Package : VQ100
+
+### Number of Logic Cells: 1280
+
+### Number of RAM4k Blocks: 16
+
+### Number of DSP Blocks: 0
+
+### Number of PLLs: 1
+
+### Number of IO Pins: 95
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+Top-level module name = main.
+Target frequency = 12.000000 MHz.
+Maximum fanout = 10000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.edf.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK (searchpath added)
+VHDL library = work
+VHDL design file = main.vhd
+-sdc option: SDC file input not used.
+-vh2008
+
+Technology check ok...
+
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Analyzing Verilog file E:/LatticeSemiconductor/LSE/userware/NT/SYNTHESIS_HEADERS/sb_ice40.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "E:/LatticeSemiconductor/sbt_backend/Projects/nanoICE40_BLINK". VHDL-1504
+Analyzing VHDL file main.vhd. VHDL-1481
+INFO - synthesis: main.vhd(7): analyzing entity main. VHDL-1012
+INFO - synthesis: main.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+main.vhd(7): executing main(Behavioral)
+
+WARNING - synthesis: main.vhd(13): replacing existing netlist main(Behavioral). VHDL-1205
+Top module name (VHDL): main
+Loading NGL library 'E:/LatticeSemiconductor/LSE/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/LatticeSemiconductor/LSE/or5g00/data/orc5glib.ngl'...
+Top-level module name = main.
+
+
+
+Applying 12.000000 MHz constraint to all clocks
+
+Writing scf file : nanoICE40_BLINK_Implmnt/nanoICE40_BLINK.scf
+
+Results of NGD DRC are available in main_drc.log.
+
+################### Begin Area Report (main)######################
+Number of register bits => 25 of 1280 (1 % )
+SB_CARRY => 23
+SB_DFF => 25
+SB_GB_IO => 1
+SB_IO => 9
+SB_LUT4 => 24
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_out_c_c, loads : 26
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LED_c, loads : 8
+  Net : n137, loads : 2
+  Net : n136, loads : 2
+  Net : n135, loads : 2
+  Net : n134, loads : 2
+  Net : n141, loads : 2
+  Net : n24, loads : 2
+  Net : n23, loads : 2
+  Net : n22, loads : 2
+  Net : n21, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 83.333333 -name    |             |             |
+clk0 [get_nets clk_out_c_c]             |   12.000 MHz|   25.598 MHz|    25  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 57.680  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.391  secs
+--------------------------------------------------------------

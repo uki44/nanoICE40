@@ -1,0 +1,30 @@
+ble_pack cnt_15__i0_LC_16 {cnt_15__i0, cnt_15_add_4_2, cnt_15_add_4_2_lut}
+ble_pack cnt_15__i1_LC_17 {cnt_15__i1, cnt_15_add_4_3, cnt_15_add_4_3_lut}
+ble_pack cnt_15__i2_LC_18 {cnt_15__i2, cnt_15_add_4_4, cnt_15_add_4_4_lut}
+ble_pack cnt_15__i3_LC_19 {cnt_15__i3, cnt_15_add_4_5, cnt_15_add_4_5_lut}
+ble_pack cnt_15__i4_LC_20 {cnt_15__i4, cnt_15_add_4_6, cnt_15_add_4_6_lut}
+ble_pack cnt_15__i5_LC_21 {cnt_15__i5, cnt_15_add_4_7, cnt_15_add_4_7_lut}
+ble_pack cnt_15__i6_LC_22 {cnt_15__i6, cnt_15_add_4_8, cnt_15_add_4_8_lut}
+ble_pack cnt_15__i7_LC_23 {cnt_15__i7, cnt_15_add_4_9, cnt_15_add_4_9_lut}
+clb_pack PLB_0 {cnt_15__i0_LC_16, cnt_15__i1_LC_17, cnt_15__i2_LC_18, cnt_15__i3_LC_19, cnt_15__i4_LC_20, cnt_15__i5_LC_21, cnt_15__i6_LC_22, cnt_15__i7_LC_23}
+ble_pack cnt_15__i8_LC_0 {cnt_15__i8, cnt_15_add_4_10, cnt_15_add_4_10_lut}
+ble_pack cnt_15__i9_LC_1 {cnt_15__i9, cnt_15_add_4_11, cnt_15_add_4_11_lut}
+ble_pack cnt_15__i10_LC_2 {cnt_15__i10, cnt_15_add_4_12, cnt_15_add_4_12_lut}
+ble_pack cnt_15__i11_LC_3 {cnt_15__i11, cnt_15_add_4_13, cnt_15_add_4_13_lut}
+ble_pack cnt_15__i12_LC_4 {cnt_15__i12, cnt_15_add_4_14, cnt_15_add_4_14_lut}
+ble_pack cnt_15__i13_LC_5 {cnt_15__i13, cnt_15_add_4_15, cnt_15_add_4_15_lut}
+ble_pack cnt_15__i14_LC_6 {cnt_15__i14, cnt_15_add_4_16, cnt_15_add_4_16_lut}
+ble_pack cnt_15__i15_LC_7 {cnt_15__i15, cnt_15_add_4_17, cnt_15_add_4_17_lut}
+clb_pack PLB_1 {cnt_15__i8_LC_0, cnt_15__i9_LC_1, cnt_15__i10_LC_2, cnt_15__i11_LC_3, cnt_15__i12_LC_4, cnt_15__i13_LC_5, cnt_15__i14_LC_6, cnt_15__i15_LC_7}
+ble_pack cnt_15__i16_LC_8 {cnt_15__i16, cnt_15_add_4_18, cnt_15_add_4_18_lut}
+ble_pack cnt_15__i17_LC_9 {cnt_15__i17, cnt_15_add_4_19, cnt_15_add_4_19_lut}
+ble_pack cnt_15__i18_LC_10 {cnt_15__i18, cnt_15_add_4_20, cnt_15_add_4_20_lut}
+ble_pack cnt_15__i19_LC_11 {cnt_15__i19, cnt_15_add_4_21, cnt_15_add_4_21_lut}
+ble_pack cnt_15__i20_LC_12 {cnt_15__i20, cnt_15_add_4_22, cnt_15_add_4_22_lut}
+ble_pack cnt_15__i21_LC_13 {cnt_15__i21, cnt_15_add_4_23, cnt_15_add_4_23_lut}
+ble_pack cnt_15__i22_LC_14 {cnt_15__i22, cnt_15_add_4_24, cnt_15_add_4_24_lut}
+ble_pack cnt_15__i23_LC_15 {cnt_15__i23, cnt_15_add_4_25_lut}
+clb_pack PLB_2 {cnt_15__i16_LC_8, cnt_15__i17_LC_9, cnt_15__i18_LC_10, cnt_15__i19_LC_11, cnt_15__i20_LC_12, cnt_15__i21_LC_13, cnt_15__i22_LC_14, cnt_15__i23_LC_15}
+ble_pack LED_i1_LC_24 {LED_i1, LED_i1_THRU_LUT4_0}
+ble_pack GB_BUFFER_clk_out_c_c_THRU_LUT4_0_LC_25 {GB_BUFFER_clk_out_c_c_THRU_LUT4_0}
+clb_pack PLB_3 {LED_i1_LC_24, GB_BUFFER_clk_out_c_c_THRU_LUT4_0_LC_25}

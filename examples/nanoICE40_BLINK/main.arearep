@@ -1,0 +1,12 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  25 of 1280 (1.953%)
+I/O cells:      0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           SB_CARRY        23          100.0
+                             SB_DFF        25          100.0
+                           SB_GB_IO         1          100.0
+                              SB_IO         9          100.0
+                            SB_LUT4        24          100.0
+                              TOTAL        82

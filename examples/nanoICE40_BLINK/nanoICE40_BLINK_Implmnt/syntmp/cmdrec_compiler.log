@@ -1,0 +1,7 @@
+E:\LatticeSemiconductor\synpbase\bin64\c_hdl.exe  -osyn  E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\synwork\nanoICE40_BLINK_comp.srs  -hdllog  E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\synlog\nanoICE40_BLINK_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -vhdl  -prodtype  synplify_pro  -primux -fixsmult -infer_seqShift -ice -sdff_counter -nram -divnmod -nostructver  -encrypt  -pro  -dmgen  E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work E:\LatticeSemiconductor\sbt_backend\Projects\icestickTest\main.vhd 
+rc:2 success:0 runtime:0
+file:E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\synwork\nanoICE40_BLINK_comp.srs|io:o|time:0|size:0|exec:0
+file:E:\LatticeSemiconductor\sbt_backend\Projects\nanoICE40_BLINK\nanoICE40_BLINK_Implmnt\synlog\nanoICE40_BLINK_compiler.srr|io:o|time:1698616748|size:1733|exec:0
+file:E:\LatticeSemiconductor\sbt_backend\Projects\icestickTest\main.vhd|io:i|time:1670274214|size:0|exec:0
+file:E:\LatticeSemiconductor\synpbase\bin\c_hdl.exe|io:i|time:1670258536|size:1338368|exec:1
+file:E:\LatticeSemiconductor\synpbase\bin64\c_hdl.exe|io:i|time:1670258537|size:1754112|exec:1

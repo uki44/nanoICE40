@@ -1,0 +1,500 @@
+* ******************************************************************************
+
+* iCEcube Router
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:44:35
+
+* File Generated:     Nov 1 2023 13:47:56
+
+* Purpose:            Detailed routing info for each net
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Net : n24
+T_5_1_wire_logic_cluster/lc_0/out
+T_5_1_lc_trk_g0_0
+T_5_1_input_2_0
+T_5_1_wire_logic_cluster/lc_0/in_2
+
+End 
+
+Net : n156
+T_5_3_wire_logic_cluster/lc_6/cout
+T_5_3_wire_logic_cluster/lc_7/in_3
+
+End 
+
+Net : n23
+T_5_1_wire_logic_cluster/lc_1/out
+T_5_1_lc_trk_g2_1
+T_5_1_input_2_1
+T_5_1_wire_logic_cluster/lc_1/in_2
+
+End 
+
+Net : n155
+T_5_3_wire_logic_cluster/lc_5/cout
+T_5_3_wire_logic_cluster/lc_6/in_3
+
+Net : n22
+T_5_1_wire_logic_cluster/lc_2/out
+T_5_1_lc_trk_g0_2
+T_5_1_input_2_2
+T_5_1_wire_logic_cluster/lc_2/in_2
+
+End 
+
+Net : n154
+T_5_3_wire_logic_cluster/lc_4/cout
+T_5_3_wire_logic_cluster/lc_5/in_3
+
+Net : n21
+T_5_1_wire_logic_cluster/lc_3/out
+T_5_1_lc_trk_g0_3
+T_5_1_input_2_3
+T_5_1_wire_logic_cluster/lc_3/in_2
+
+End 
+
+Net : n153
+T_5_3_wire_logic_cluster/lc_3/cout
+T_5_3_wire_logic_cluster/lc_4/in_3
+
+Net : n20
+T_5_1_wire_logic_cluster/lc_4/out
+T_5_1_lc_trk_g2_4
+T_5_1_input_2_4
+T_5_1_wire_logic_cluster/lc_4/in_2
+
+End 
+
+Net : n152
+T_5_3_wire_logic_cluster/lc_2/cout
+T_5_3_wire_logic_cluster/lc_3/in_3
+
+Net : n19
+T_5_1_wire_logic_cluster/lc_5/out
+T_5_1_lc_trk_g0_5
+T_5_1_input_2_5
+T_5_1_wire_logic_cluster/lc_5/in_2
+
+End 
+
+Net : n151
+T_5_3_wire_logic_cluster/lc_1/cout
+T_5_3_wire_logic_cluster/lc_2/in_3
+
+Net : n18
+T_5_1_wire_logic_cluster/lc_6/out
+T_5_1_lc_trk_g0_6
+T_5_1_input_2_6
+T_5_1_wire_logic_cluster/lc_6/in_2
+
+End 
+
+Net : n150
+T_5_3_wire_logic_cluster/lc_0/cout
+T_5_3_wire_logic_cluster/lc_1/in_3
+
+Net : n17
+T_5_1_wire_logic_cluster/lc_7/out
+T_5_1_lc_trk_g2_7
+T_5_1_input_2_7
+T_5_1_wire_logic_cluster/lc_7/in_2
+
+End 
+
+Net : bfn_5_3_0_
+T_5_3_wire_logic_cluster/carry_in_mux/cout
+T_5_3_wire_logic_cluster/lc_0/in_3
+
+Net : n16
+T_5_2_wire_logic_cluster/lc_0/out
+T_5_2_lc_trk_g0_0
+T_5_2_input_2_0
+T_5_2_wire_logic_cluster/lc_0/in_2
+
+End 
+
+Net : n148
+T_5_2_wire_logic_cluster/lc_6/cout
+T_5_2_wire_logic_cluster/lc_7/in_3
+
+Net : n15
+T_5_2_wire_logic_cluster/lc_1/out
+T_5_2_lc_trk_g2_1
+T_5_2_input_2_1
+T_5_2_wire_logic_cluster/lc_1/in_2
+
+End 
+
+Net : n147
+T_5_2_wire_logic_cluster/lc_5/cout
+T_5_2_wire_logic_cluster/lc_6/in_3
+
+Net : n14
+T_5_2_wire_logic_cluster/lc_2/out
+T_5_2_lc_trk_g0_2
+T_5_2_input_2_2
+T_5_2_wire_logic_cluster/lc_2/in_2
+
+End 
+
+Net : n146
+T_5_2_wire_logic_cluster/lc_4/cout
+T_5_2_wire_logic_cluster/lc_5/in_3
+
+Net : n13
+T_5_2_wire_logic_cluster/lc_3/out
+T_5_2_lc_trk_g0_3
+T_5_2_input_2_3
+T_5_2_wire_logic_cluster/lc_3/in_2
+
+End 
+
+Net : n145
+T_5_2_wire_logic_cluster/lc_3/cout
+T_5_2_wire_logic_cluster/lc_4/in_3
+
+Net : n12
+T_5_2_wire_logic_cluster/lc_4/out
+T_5_2_lc_trk_g2_4
+T_5_2_input_2_4
+T_5_2_wire_logic_cluster/lc_4/in_2
+
+End 
+
+Net : n144
+T_5_2_wire_logic_cluster/lc_2/cout
+T_5_2_wire_logic_cluster/lc_3/in_3
+
+Net : n11
+T_5_2_wire_logic_cluster/lc_5/out
+T_5_2_lc_trk_g0_5
+T_5_2_input_2_5
+T_5_2_wire_logic_cluster/lc_5/in_2
+
+End 
+
+Net : n143
+T_5_2_wire_logic_cluster/lc_1/cout
+T_5_2_wire_logic_cluster/lc_2/in_3
+
+Net : n10
+T_5_2_wire_logic_cluster/lc_6/out
+T_5_2_lc_trk_g0_6
+T_5_2_input_2_6
+T_5_2_wire_logic_cluster/lc_6/in_2
+
+End 
+
+Net : n142
+T_5_2_wire_logic_cluster/lc_0/cout
+T_5_2_wire_logic_cluster/lc_1/in_3
+
+Net : n9
+T_5_2_wire_logic_cluster/lc_7/out
+T_5_2_lc_trk_g2_7
+T_5_2_input_2_7
+T_5_2_wire_logic_cluster/lc_7/in_2
+
+End 
+
+Net : bfn_5_2_0_
+T_5_2_wire_logic_cluster/carry_in_mux/cout
+T_5_2_wire_logic_cluster/lc_0/in_3
+
+Net : n8
+T_5_3_wire_logic_cluster/lc_0/out
+T_5_3_lc_trk_g0_0
+T_5_3_input_2_0
+T_5_3_wire_logic_cluster/lc_0/in_2
+
+End 
+
+Net : n140
+T_5_1_wire_logic_cluster/lc_6/cout
+T_5_1_wire_logic_cluster/lc_7/in_3
+
+Net : n7
+T_5_3_wire_logic_cluster/lc_1/out
+T_5_3_lc_trk_g2_1
+T_5_3_input_2_1
+T_5_3_wire_logic_cluster/lc_1/in_2
+
+End 
+
+Net : n139
+T_5_1_wire_logic_cluster/lc_5/cout
+T_5_1_wire_logic_cluster/lc_6/in_3
+
+Net : n6
+T_5_3_wire_logic_cluster/lc_2/out
+T_5_3_lc_trk_g0_2
+T_5_3_input_2_2
+T_5_3_wire_logic_cluster/lc_2/in_2
+
+End 
+
+Net : n138
+T_5_1_wire_logic_cluster/lc_4/cout
+T_5_1_wire_logic_cluster/lc_5/in_3
+
+Net : n5
+T_5_3_wire_logic_cluster/lc_3/out
+T_5_3_lc_trk_g0_3
+T_5_3_input_2_3
+T_5_3_wire_logic_cluster/lc_3/in_2
+
+End 
+
+Net : n137
+T_5_1_wire_logic_cluster/lc_3/cout
+T_5_1_wire_logic_cluster/lc_4/in_3
+
+Net : n136
+T_5_1_wire_logic_cluster/lc_2/cout
+T_5_1_wire_logic_cluster/lc_3/in_3
+
+Net : n4
+T_5_3_wire_logic_cluster/lc_4/out
+T_5_3_lc_trk_g2_4
+T_5_3_input_2_4
+T_5_3_wire_logic_cluster/lc_4/in_2
+
+End 
+
+Net : n135
+T_5_1_wire_logic_cluster/lc_1/cout
+T_5_1_wire_logic_cluster/lc_2/in_3
+
+Net : n3
+T_5_3_wire_logic_cluster/lc_5/out
+T_5_3_lc_trk_g0_5
+T_5_3_input_2_5
+T_5_3_wire_logic_cluster/lc_5/in_2
+
+End 
+
+Net : n134
+T_5_1_wire_logic_cluster/lc_0/cout
+T_5_1_wire_logic_cluster/lc_1/in_3
+
+Net : n2
+T_5_3_wire_logic_cluster/lc_6/out
+T_5_3_lc_trk_g0_6
+T_5_3_input_2_6
+T_5_3_wire_logic_cluster/lc_6/in_2
+
+End 
+
+Net : LED_7_N_1_7
+T_5_3_wire_logic_cluster/lc_7/out
+T_5_3_lc_trk_g1_7
+T_5_3_wire_logic_cluster/lc_7/in_1
+
+T_5_3_wire_logic_cluster/lc_7/out
+T_4_3_lc_trk_g2_7
+T_4_3_wire_logic_cluster/lc_0/in_3
+
+End 
+
+Net : LED_c
+T_4_3_wire_logic_cluster/lc_0/out
+T_4_0_span4_vert_40
+T_4_0_lc_trk_g0_0
+T_4_0_wire_io_cluster/io_0/D_OUT_0
+
+T_4_3_wire_logic_cluster/lc_0/out
+T_4_3_sp4_h_l_5
+T_3_0_span4_vert_34
+T_3_0_lc_trk_g0_2
+T_3_0_wire_io_cluster/io_0/D_OUT_0
+
+T_4_3_wire_logic_cluster/lc_0/out
+T_4_3_sp4_h_l_5
+T_3_0_span4_vert_34
+T_3_0_lc_trk_g1_2
+T_3_0_wire_io_cluster/io_1/D_OUT_0
+
+T_4_3_wire_logic_cluster/lc_0/out
+T_3_3_sp4_h_l_8
+T_6_0_span4_vert_32
+T_6_0_lc_trk_g0_0
+T_6_0_wire_io_cluster/io_0/D_OUT_0
+
+T_4_3_wire_logic_cluster/lc_0/out
+T_4_3_sp4_h_l_5
+T_7_0_span4_vert_29
+T_7_0_lc_trk_g0_5
+T_7_0_wire_io_cluster/io_1/D_OUT_0
+
+T_4_3_wire_logic_cluster/lc_0/out
+T_5_1_sp4_v_t_44
+T_6_1_sp4_h_l_2
+T_9_0_span4_vert_8
+T_9_0_lc_trk_g1_0
+T_9_0_wire_io_cluster/io_1/D_OUT_0
+
+T_4_3_wire_logic_cluster/lc_0/out
+T_4_0_span12_vert_4
+T_5_3_sp12_h_l_0
+T_13_3_lc_trk_g1_0
+T_13_3_wire_io_cluster/io_1/D_OUT_0
+
+T_4_3_wire_logic_cluster/lc_0/out
+T_5_0_span4_vert_25
+T_5_0_span4_horz_r_0
+T_9_0_span4_horz_r_0
+T_13_4_lc_trk_g0_0
+T_13_4_wire_io_cluster/io_0/D_OUT_0
+
+End 
+
+Net : GB_BUFFER_clk_out_c_c_THRU_CO
+T_1_16_wire_logic_cluster/lc_2/out
+T_1_17_lc_trk_g1_2
+T_1_17_wire_io_cluster/io_1/D_OUT_0
+
+End 
+
+Net : clk_out_c_c
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_1_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_1_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_1_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_1_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_1_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_1_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_1_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_1_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_2_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_2_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_2_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_2_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_2_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_2_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_2_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_2_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_5_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_4_3_wire_logic_cluster/lc_3/clk
+
+T_7_0_wire_io_cluster/io_0/gbout
+T_6_0_wire_pll/outglobalb
+T_0_0_glb_netwk_3
+T_1_16_glb2local_2
+T_1_16_lc_trk_g0_6
+T_1_16_wire_logic_cluster/lc_2/in_0
+
+End 
+
+Net : bfn_5_1_0_

@@ -1,0 +1,2 @@
+@W: CD433 :"E:\LatticeSemiconductor\sbt_backend\Projects\icestickTest\main.vhd":0:0:0:0|No design units in file
+

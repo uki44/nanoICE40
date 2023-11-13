@@ -1,0 +1,10 @@
+OUTPUT LED[6] 	 location (13, 3, 1) 	 51 	 SB_LVCMOS
+OUTPUT LED[2] 	 location (4, 0, 0) 	 30 	 SB_LVCMOS
+OUTPUT clk_out 	 location (1, 17, 1) 	 100 	 SB_LVCMOS
+OUTPUT LED[7] 	 location (13, 4, 0) 	 52 	 SB_LVCMOS
+OUTPUT LED[5] 	 location (9, 0, 1) 	 40 	 SB_LVCMOS
+OUTPUT LED[3] 	 location (6, 0, 0) 	 36 	 SB_LVCMOS
+OUTPUT LED[1] 	 location (3, 0, 1) 	 29 	 SB_LVCMOS
+INPUT  clk_in 	 location (7, 0, 0) 	 34 	 SB_LVCMOS
+OUTPUT LED[4] 	 location (7, 0, 1) 	 37 	 SB_LVCMOS
+OUTPUT LED[0] 	 location (3, 0, 0) 	 28 	 SB_LVCMOS

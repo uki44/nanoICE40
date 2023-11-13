@@ -1,0 +1,102 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Nov 1 2023 13:47:54
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 0 seconds
+
+Device Info:
+------------
+    Device Family: iCE40
+    Device:        iCE40HX1K
+    Package:       VQ100
+
+Design statistics:
+------------------
+    FFs:                  25
+    LUTs:                 26
+    RAMs:                 0
+    IOBs:                 10
+    GBs:                  1
+    PLLs:                 0
+    Warm Boots:           0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 26/1280
+        Combinational Logic Cells: 1        out of   1280      0.078125%
+        Sequential Logic Cells:    25       out of   1280      1.95313%
+        Logic Tiles:               5        out of   160       3.125%
+    Registers: 
+        Logic Registers:           25       out of   1280      1.95313%
+        IO Registers:              0        out of   560       0
+    Block RAMs:                    0        out of   16        0%
+    Warm Boots:                    0        out of   1         0%
+    Pins:
+        Input Pins:                1        out of   72        1.38889%
+        Output Pins:               9        out of   72        12.5%
+        InOut Pins:                0        out of   72        0%
+    Global Buffers:                1        out of   8         12.5%
+    PLLs:                          0        out of   0       
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 0        out of   18        0%
+    Bank 1: 2        out of   19        10.5263%
+    Bank 0: 1        out of   19        5.26316%
+    Bank 2: 7        out of   16        43.75%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name
+    ----------  ---------  -----------  -------  -------  -----------    -----------
+    34          Input      SB_LVCMOS    No       2        Simple Input   clk_in   
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name
+    ----------  ---------  -----------  -------  -------  -----------    -----------
+    28          Output     SB_LVCMOS    No       2        Simple Output  LED[0]   
+    29          Output     SB_LVCMOS    No       2        Simple Output  LED[1]   
+    30          Output     SB_LVCMOS    No       2        Simple Output  LED[2]   
+    36          Output     SB_LVCMOS    No       2        Simple Output  LED[3]   
+    37          Output     SB_LVCMOS    No       2        Simple Output  LED[4]   
+    40          Output     SB_LVCMOS    No       2        Simple Output  LED[5]   
+    51          Output     SB_LVCMOS    No       1        Simple Output  LED[6]   
+    52          Output     SB_LVCMOS    No       1        Simple Output  LED[7]   
+    100         Output     SB_LVCMOS    No       0        Simple Output  clk_out  
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name  
+    -------------  -------  ---------  ------  -----------  
+    3              2        IO         26      clk_out_c_c  
+
+
+Router Summary:
+---------------
+    Status:  Successful
+    Runtime: 2 seconds
+
+Routing Resource Utilization:
+-----------------------------
+              Local line of tile      174 out of  28666      0.606991%
+                          Span 4       12 out of   6944      0.172811%
+                         Span 12        2 out of   1440      0.138889%
+                  Global network        1 out of      8      12.5%
+      Vertical Inter-LUT Connect        0 out of   1120      0%
+

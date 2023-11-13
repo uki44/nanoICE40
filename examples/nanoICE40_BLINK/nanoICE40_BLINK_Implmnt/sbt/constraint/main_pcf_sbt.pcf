@@ -1,0 +1,26 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2020.12.27943
+
+# File Generated:     Nov 1 2023 13:47:49
+
+# Family & Device:    iCE40HX1K
+
+# Package:            VQ100
+
+# ##############################################################################
+
+###IOSet List 10
+set_io LED[0] 28 -io_std SB_LVCMOS -pullup no
+set_io LED[4] 37 -io_std SB_LVCMOS -pullup no
+set_io clk_in 34 -io_std SB_LVCMOS -pullup no
+set_io LED[1] 29 -io_std SB_LVCMOS -pullup no
+set_io LED[3] 36 -io_std SB_LVCMOS -pullup no
+set_io LED[5] 40 -io_std SB_LVCMOS -pullup no
+set_io LED[7] 52 -io_std SB_LVCMOS -pullup no
+set_io clk_out 100 -io_std SB_LVCMOS -pullup no
+set_io LED[2] 30 -io_std SB_LVCMOS -pullup no
+set_io LED[6] 51 -io_std SB_LVCMOS -pullup no
+
